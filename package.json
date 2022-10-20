@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "project for internship",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NikitaKirpichev/internship-aqa.git"
@@ -29,5 +27,8 @@
     "selenium": "^2.20.0",
     "supertest": "^6.3.0",
     "webdriver": "^7.25.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
   }
 }

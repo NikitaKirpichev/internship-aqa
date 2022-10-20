@@ -39,7 +39,7 @@ export class LoginPage{
 
     public async login(username: string, password: string){
         await this.enterUserName(username);
-        await this.enterUserPassword(username);
+        await this.enterUserPassword(password);
         await this.clickLoginBtn();
         
     }
