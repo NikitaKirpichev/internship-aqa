@@ -42,5 +42,6 @@
     "ts-node": "^10.9.1",
     "wdio": "^6.0.1",
     "wdio-chromedriver-service": "^8.0.0"
-  }
+  },
+  "type": "module"
 }
