@@ -4,7 +4,9 @@
   "description": "project for internship",
   "main": "index.js",
   "scripts": {
-    "wdio": "wdio run ./POM/webdriver/wdio.conf.ts"
+    "wdio": "wdio run ./POM/webdriver/wdio.conf.ts",
+    "test:reporter": "npx playwright test login.spec.ts --headed --reporter=allure-playwright",
+    "allure-report": "npx allure generate --clean ./allure-results && allure open "
   },
   "repository": {
     "type": "git",
@@ -37,11 +39,13 @@
     "@wdio/local-runner": "^7.25.2",
     "@wdio/mocha-framework": "^7.25.2",
     "@wdio/spec-reporter": "^7.25.1",
+    "allure-commandline": "^2.18.1",
+    "allure-playwright": "^2.0.0-beta.19",
     "chromedriver": "^106.0.1",
     "cypress": "^10.10.0",
+    "experimental-allure-playwright": "^0.0.3",
     "ts-node": "^10.9.1",
     "wdio": "^6.0.1",
     "wdio-chromedriver-service": "^8.0.0"
-  },
-  "type": "module"
+  }
 }
