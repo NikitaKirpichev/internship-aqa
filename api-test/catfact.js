@@ -1,5 +1,5 @@
-import supertest from 'supertest';
-import { expect, should } from 'chai';
+const supertest = require('supertest');
+const { expect } = require('chai');
 
 const request = supertest('https://catfact.ninja/');
 
