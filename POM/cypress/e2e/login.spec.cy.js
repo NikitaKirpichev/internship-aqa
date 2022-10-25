@@ -12,6 +12,7 @@ describe("Login", function () {
     cy.get('#flash')
           .should('exist')
           .contains('You logged into a secure area!');
+          cy.screenshot() 
   })
 
   it('failed (wrong password)', () => {
@@ -22,6 +23,7 @@ describe("Login", function () {
     cy.get('#flash')
           .should('exist')
           .contains('Your password is invalid!');
+    cy.screenshot() 
   })
 
 })

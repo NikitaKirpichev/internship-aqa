@@ -5,3 +5,7 @@
 /playwright/.cache/
 /allure-report
 /allure-results
+/allure-reports
+/POM/allure-results
+/POM/cypress/screenshots
+/POM/cypress/videos

@@ -6,7 +6,10 @@ const assert = require('assert');
 
 const data = require('../../data/login.mock.json')
 
-describe('Login test', function(){
+import { allure } from "allure-mocha/runtime";
+
+describe('Login test (Selenium)', function(){
+    this.timeout(30000)
     let login;
     let driver;
     this.beforeEach(async function() {
@@ -21,7 +24,7 @@ describe('Login test', function(){
 
     it('succses login', async function(){
         await login.auth(data.username, data.password);
-        assert(await login.successMessage())
+        assert(await login.successMessage()) 
     })
 
     it('succses failed (wrong password)', async function(){
