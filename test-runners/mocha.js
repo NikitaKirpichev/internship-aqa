@@ -6,7 +6,7 @@ const assert = require('chai').assert;
 describe("Test string from txt file", function(){
   let tests = "";
   before(function(done){
-    fs.readFile('test-runners/input.txt', 'utf8', function(err, fileContents) {
+    fs.readFile('./input.txt', 'utf8', function(err, fileContents) {
       if (err) throw err;
       tests = fileContents;
       done();
