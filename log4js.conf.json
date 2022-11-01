@@ -1,0 +1,31 @@
+{
+    "appenders": {
+      "access": {
+        "type": "dateFile",
+        "filename": "logs/webdriver.log",
+        "pattern": "-yyyy-MM-dd",
+        "category": "http"
+      },
+      "app": {
+        "type": "file",
+        "filename": "logs/webdriver.log",
+        "maxLogSize": 10485760,
+        "numBackups": 3
+      },
+      "errorFile": {
+        "type": "file",
+        "filename": "logs/webdriver-errors.log"
+      },
+      "errors": {
+        "type": "logLevelFilter",
+        "level": "ERROR",
+        "appender": "errorFile"
+      }
+    },
+    "categories": {
+      "default": { "appenders": [ "app", "errors" ], "level": "DEBUG" },
+      "webdriver": {"appenders": [ "app", "errors" ], "level": "DEBUG" },
+      "selenium-webdriver": {"appenders": [ "app", "errors" ], "level": "DEBUG" },
+      "playwright": {"appenders": [ "app", "errors" ], "level": "DEBUG" }
+    }
+  }
