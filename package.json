@@ -28,6 +28,7 @@
     "chai": "^4.3.6",
     "express": "^4.18.2",
     "log4j": "^1.0.0",
+    "log4js": "^6.7.0",
     "mocha": "^10.1.0",
     "mysql2": "^2.3.3",
     "selenium": "^2.20.0",
@@ -37,6 +38,7 @@
     "webdriver": "^7.25.1"
   },
   "devDependencies": {
+    "@log4js-node/log4js-api": "^1.0.2",
     "@playwright/test": "^1.27.1",
     "@shelex/cypress-allure-plugin": "^2.33.1",
     "@wdio/allure-reporter": "^7.25.2",
@@ -54,6 +56,7 @@
     "mocha-multi-reporters": "^1.5.1",
     "ts-node": "^10.9.1",
     "wdio": "^6.0.1",
-    "wdio-chromedriver-service": "^8.0.0"
+    "wdio-chromedriver-service": "^8.0.0",
+    "wdio-html-nice-reporter": "^8.0.5"
   }
 }
